@@ -18,6 +18,7 @@ section {
   border: 2px solid cyan;
   background-color: black;
   display: flex;
+  flex-wrap: wrap;
 }
 
 canvas {
@@ -67,6 +68,47 @@ aside {
 h2 {
   text-align: center;
   font-size: 36px;
+}
+
+.button-container {
+  width: 760px;
+  background-color: black;
+  border: 2px solid cyan;
+  color: white;
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+}
+
+.difficulty-btn-container {
+  width: 50%;
+  padding-top: 0;
+}
+
+.difficulty-level {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  background: none;
+  border: 2px solid cyan;
+  border-radius: 4px;
+  color: cyan;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pause-btn,
+.reset-game-btn {
+  margin: 10px;
+}
+
+button:hover {
+  background-color: cyan;
+  color: black;
 }
 
 /*.aside-corner {
