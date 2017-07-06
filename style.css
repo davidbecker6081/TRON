@@ -113,15 +113,24 @@ button:hover {
 }
 
 .keys-container {
+  display: flex;
   color: cyan;
   align-items: center;
-  display: flex;
-  flex-direction: column;
   margin-top: 10px;
+}
+
+.controls-box {
+  color: cyan;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .controls {
   color: cyan;
+}
+
+.controls-title {
+  text-align: center;
 }
 
 .key {
@@ -130,8 +139,9 @@ button:hover {
 
 .key-top,
 .key-bottom {
+  color: cyan;
   align-items: center;
-  border: 1px solid #c7c6c6;
+  border: 1px solid cyan;
   border-radius: 2px;
   display: flex;
   height: 30px;
@@ -139,8 +149,14 @@ button:hover {
   width: 30px;
 }
 
+.p1-controls,
+.p2-controls {
+  width: 50%;
+}
+
 .key-bottom-container,
-.keys-top-container {
+.key-top-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
