@@ -25,6 +25,7 @@ body {
 section {
   display: flex;
   flex-wrap: wrap;
+  width: 963px;
   border: 2px solid cyan;
   margin-top: 25px;
   padding: 25px;
@@ -73,17 +74,33 @@ aside {
   height: 150px;
   margin: 20px 10px;
   color: Cyan;
+  text-align: center;
+}
+
+.player1,
+.player2 {
+  font-size: 24px;
+}
+
+.player1 {
+  color: #FFDD33;
+}
+
+.player2 {
+  color: red;
 }
 
 h2 {
-  margin-top: 5px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: white;
   font-size: 36px;
   text-align: center;
 }
 
 .button-container {
   display: flex;
-  width: 760px;
+  width: 958px;
   color: white;
   background-color: black;
   border: 2px solid cyan;
@@ -92,13 +109,15 @@ h2 {
 }
 
 .difficulty-btn-container {
-  width: 50%;
+  width: 80%;
   padding-top: 0;
+  text-align: center;
 }
 
 .difficulty-level {
+  margin-top: 5px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 button {
@@ -117,9 +136,14 @@ button {
   margin: 10px;
 }
 
+button:focus {
+  outline: 0;
+}
+
 button:hover {
   background-color: cyan;
   color: black;
+  cursor: pointer;
 }
 
 .keys-container {
@@ -132,10 +156,6 @@ button:hover {
 .controls-box {
   display: flex;
   flex-wrap: wrap;
-  color: cyan;
-}
-
-.controls {
   color: cyan;
 }
 
@@ -157,6 +177,11 @@ button:hover {
   color: cyan;
   border: 1px solid cyan;
   border-radius: 2px;
+}
+
+.p2-up,
+.p2-down {
+  transform: rotate(90deg);
 }
 
 .p1-controls,

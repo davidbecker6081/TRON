@@ -8,16 +8,16 @@
 </head>
 <body>
   <section class="game-content">
-    <canvas id="canvas-element" height="510" width="500" tabindex="1"></canvas>
-    <canvas id="canvas-overlay" height="515" width="500" tabindex="1"></canvas>
+    <canvas id="canvas-element" height="510" width="650" tabindex="1"></canvas>
+    <canvas id="canvas-overlay" height="515" width="650" tabindex="1"></canvas>
     <aside class="sidebar">
       <div class="title-box">
         <h1>TRON</h1>
       </div>
       <div class="lives-box">
         <h2 class="lives">LIVES</h2>
-        <h3 class="player1">Player 1</h3>
-        <h3 class="player2">Player 2</h3>
+        <h3 class="player1">Player 1 - <span class="p1-lives lives-counter">3</span></h3>
+        <h3 class="player2">Player 2 - <span class="p2-lives lives-counter">3</span></h3>
       </div>
       <h2 class="controls">CONTROLS</h2>
       <div class="controls-box">
@@ -35,12 +35,12 @@
         <div class="p2-controls">
           <h3 class="controls-title">Player 2</h3>
           <div class="key-top-container">
-            <p class="key-top key">^</p>
+            <p class="key-top key p2-up"><</p>
           </div>
           <div class="key-bottom-container">
             <p class="key-bottom key">
               <</p>
-                <p class="key-bottom key">v</p>
+                <p class="key-bottom key p2-down">></p>
                 <p class="key-bottom key">></p>
           </div>
         </div>
