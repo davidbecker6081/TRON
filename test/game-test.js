@@ -4,7 +4,6 @@ var GameArea = require('../lib/GameArea.js');
 var TrailElement = require('../lib/TrailElement.js');
 var GameClass = require('../lib/GameClass.js')
 
-
 describe('Tron Game', () => {
 
   let player1
@@ -13,7 +12,6 @@ describe('Tron Game', () => {
   let trailElementP2
   let gameArea
   let game
-
 
   const canvas = {
     height: 500,
