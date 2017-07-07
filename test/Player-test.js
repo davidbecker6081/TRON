@@ -73,4 +73,19 @@ describe('Player', () => {
     player.removeLife();
     expect(player.lives).to.equal(2);
   })
+  it.skip('Should be able to reset its properties', () => {
+    player.lives = 0
+    player.x = 0
+    player.y = 0
+    player.direction = 'right'
+    player.isStopped = false
+    player.collided = false
+    player.reset()
+    expect(player.lives).to.equal(3)
+    expect(player.x).to.equal(10)
+    expect(player.y).to.equal(10)
+    expect(player.direction).to.equal('none')
+    expect(player.isStopped).to.equal(true)
+    expect(player.collided).to.equal(false)
+  })
 })
