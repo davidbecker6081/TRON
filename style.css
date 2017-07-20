@@ -115,6 +115,30 @@ h2 {
   color: black;
 }
 
+.pause-btn:disabled {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: cyan;
+    background-color: black;
+    opacity: 1;
+  }
+
+  50% {
+    background-color: cyan;
+    color: black;
+    opacity: 0.7;
+  }
+
+  100% {
+    color: cyan;
+    background-color: black;
+    opacity: 0.6;
+  }
+}
+
 button {
   display: inline-block;
   background: none;
@@ -189,4 +213,8 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blink {
+  animation: blink 1.5s linear infinite;
 }
